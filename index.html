@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="img/fundo.jpg" alt="Espaço Sideral" id="bg-html">
+
+    <main class="container">
+        <h1>Missão Aura</h1>
+        
+        <section id="quiz-section">
+            <div class="form-group">
+                <label for="nome">Nome do Tripulante:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" required>
+            </div>
+
+            <div class="question">
+                <p>1. Qual atividade você prefere realizar em uma estação espacial?</p>
+                <label><input type="radio" name="p1" value="engenharia" required> Consertar os sistemas de suporte à vida.</label>
+                <label><input type="radio" name="p1" value="ciencia"> Analisar amostras de monstros desconhecidos no laboratório.</label>
+                <label><input type="radio" name="p1" value="exploracao"> Pilotar a nave de exploração na superfície do planeta.</label>
+                <label><input type="radio" name="p1" value="comando"> Coordenar os horários e recursos de toda a tripulação.</label>
+            </div>
+
+            <div class="question">
+                <p>2. Diante de um mau funcionamento inesperado na nave, qual sua reação imediata?</p>
+                <label><input type="radio" name="p2" value="engenharia" required> Pego minhas ferramentas para desmontar e corrigir a falha técnica.</label>
+                <label><input type="radio" name="p2" value="ciencia"> Procuro dados no computador para entender a causa raiz.</label>
+                <label><input type="radio" name="p2" value="exploracao"> Visto o traje espacial e vou verificar as condições externas.</label>
+                <label><input type="radio" name="p2" value="comando"> Reúno a equipe e organizo funções para conter os riscos.</label>
+            </div>
+
+            <div class="question">
+                <p>3. Qual tipo de ferramenta ou equipamento você mais tem afinidade?</p>
+                <label><input type="radio" name="p3" value="engenharia" required> Chaves de fenda quânticas, soldadores e peças mecânicas.</label>
+                <label><input type="radio" name="p3" value="ciencia"> Microscópios eletrônicos, scanners biológicos e softwares de dados.</label>
+                <label><input type="radio" name="p3" value="exploracao"> Mapas estelares, jetpacks e sinalizadores de terreno.</label>
+                <label><input type="radio" name="p3" value="comando"> Painéis de controle global, planilhas e canais de comunicação.</label>
+            </div>
+
+            <div class="question">
+                <p>4. O que mais te chama atenção na exploração de um planeta desconhecido?</p>
+                <label><input type="radio" name="p4" value="engenharia" required> Construir uma base segura e funcional do zero.</label>
+                <label><input type="radio" name="p4" value="ciencia"> Descobrir novas formas de vida ou compostos químicos.</label>
+                <label><input type="radio" name="p4" value="exploracao"> Explorar vales e cavernas onde ninguém nunca pisou.</label>
+                <label><input type="radio" name="p4" value="comando"> Garantir que a missão atinja 100% dos objetivos planejados.</label>
+            </div>
+
+            <button type="button" id="btn-descobrir">Descobrir Perfil</button>
+        </section>
+
+        <section id="resultado-section" class="hidden">
+            <h2>Resultado da Análise</h2>
+            <div id="resultado-dados"></div>
+            <button type="button" id="btn-refazer">Refazer Teste</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
